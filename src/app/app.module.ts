@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { HeaderSectionComponent } from './components/header-section/header-section.component';
 import { EachTaskComponent } from './components/each-task/each-task.component';
+import { SvgIconModule } from 'src/directives/svg-icon/svg-icon.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EachTaskComponent } from './components/each-task/each-task.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SvgIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

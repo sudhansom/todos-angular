@@ -1,0 +1,13 @@
+:host {
+  .tasks {
+    max-width: 500px;
+    margin: 30px auto;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 18px;
+    app-header-section {
+      display: block;
+      margin: 0 0 24px;
+    }
+  }
+}

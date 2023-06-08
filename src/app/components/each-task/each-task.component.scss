@@ -1,0 +1,18 @@
+:host {
+  .each-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .task {
+      font-size: 18px;
+      letter-spacing: 1.3px;
+    }
+    .delete {
+      color: red;
+      cursor: pointer;
+      &:hover {
+        filter:brightness(.8);
+      }
+    }
+  }
+}

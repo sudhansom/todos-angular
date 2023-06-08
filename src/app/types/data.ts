@@ -1,5 +1,5 @@
 export interface ITask {
-  todo: string,
+  title: string,
   name: string,
   date: string
 }

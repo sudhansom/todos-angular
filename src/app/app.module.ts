@@ -8,6 +8,9 @@ import { HeaderSectionComponent } from './components/header-section/header-secti
 import { EachTaskComponent } from './components/each-task/each-task.component';
 import { SvgIconModule } from 'src/directives/svg-icon/svg-icon.module';
 import { AddTaskComponent } from './components/add-task/add-task.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SvgIconModule
+    SvgIconModule,
+    InputTextModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { todos } from '../../../data'
 
 @Component({
   selector: 'app-tasks',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tasks.component.scss']
 })
 export class TasksComponent {
-
+  tasks = todos;
 }

@@ -6,5 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./each-task.component.scss']
 })
 export class EachTaskComponent {
-  @Input() task = 'My task';
+  @Input() task?: {
+    todo: string,
+    name: string,
+    date: string
+  } ;
 }

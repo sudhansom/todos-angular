@@ -9,10 +9,11 @@
       margin: 0;
     }
     .delete {
-      color: red;
+      fill: red;
       cursor: pointer;
       &:hover {
         filter:brightness(.8);
+
       }
     }
   }

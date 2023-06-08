@@ -1,7 +1,5 @@
 <div class="tasks">
   <app-header-section></app-header-section>
-  <hr>
-  <app-add-task></app-add-task>
-  <hr>
-  <app-each-task *ngFor="let task of tasks" [task]="task"></app-each-task>
+  <app-add-task *ngIf="(showAddButton$ | async)"></app-add-task>
+  <app-each-task *ngFor="let task of tasks$ | async" [task]="task"></app-each-task>
 </div>

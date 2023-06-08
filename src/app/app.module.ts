@@ -10,6 +10,8 @@ import { SvgIconModule } from 'src/directives/svg-icon/svg-icon.module';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { ButtonModule } from 'primeng/button';
     SvgIconModule,
     InputTextModule,
     ButtonModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

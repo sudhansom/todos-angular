@@ -1,4 +1,8 @@
 <div class="header-section">
   <h2>My Todo Lists</h2>
-  <span class="span-add-button">Add more</span>
+  <span
+  class="span-add-button"
+  (click)="toggleAddButton()"
+  [ngStyle]="{backgroundColor: (showAddButton$ | async)?'green': 'red'}"
+  >{{(showAddButton$ | async)?'Add More': 'Hide'}}</span>
 </div>

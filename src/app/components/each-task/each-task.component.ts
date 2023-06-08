@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ITask } from 'src/app/types/data';
 
 @Component({
   selector: 'app-each-task',
@@ -6,9 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./each-task.component.scss']
 })
 export class EachTaskComponent {
-  @Input() task?: {
-    todo: string,
-    name: string,
-    date: string
-  } ;
+  @Input() task?: ITask ;
 }
